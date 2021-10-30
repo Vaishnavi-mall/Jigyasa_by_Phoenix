@@ -13,6 +13,7 @@
     <script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jigyasa</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
@@ -112,6 +113,23 @@
             left: 780px;
             text-align: left;
         }
+        a {
+            text-decoration: none;
+            color:#703160;
+        }
+        a:hover{
+            color: #000000;
+        }
+        td {
+            padding: 0.5vh 0.5vw 0.5vh 0.5vw;
+        }
+        table tr td a{
+            text-decoration: none;
+            color: #000000;
+        }
+        table tr td a:hover{
+            color: #703160;
+        }
     </style>
 </head>
 
@@ -131,10 +149,10 @@
                             English UK
                         </li>
                         <li class="mt-4" style="margin-left:150px;font-size:22px;font-weight:700;">
-                            About us
+                           <a href="#carousel-section">About Us</a>
                         </li>
                         <li class="mt-4" style="margin-left:150px;font-size:22px;font-weight:700;">
-                            Connect
+                           <a href="#connections">Connect</a> 
                         </li>
                     </ul>
                 </div>
@@ -163,14 +181,14 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid p-0">
+        <div class="container-fluid p-0"  id="carousel-section">
             <div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li class="active" data-target="#carousel" data-slide-to="0"></li>
                     <li data-target="#carousel" data-slide-to="1"></li>
                     <li data-target="#carousel" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner " role="listbox">
+                <div class="carousel-inner " role="listbox" >
                     <div class="carousel-item active boat  ">
                         <div class="container h-100 d-md-block ">
                             <div class="row align-items-center h-100">
@@ -274,34 +292,45 @@
                     Breaking the silence
                 </div>
             </div>
-            <div class="col">
+            <div class="col" id="connections">
                 <h3 class="ms-3">Follow Us</h3>
                 <div style="display:flex;">
                     <div class="col">
                         <ul style="list-style-type:None;padding:0px;">
                             <li>Let us be social</li>
                             <li>Gargi Bisht</li>
-                            <li>Khusi Srivastav</li>
+                            <li>Khushi Srivastava</li>
                             <li>Vanitha</li>
                             <li>Vaishnavi Mall</li>
                         </ul>
                     </div>
-                    <div class="col mt-3" style="margin-left:0px;text-align:center;">
-                        <ul style="list-style-type:None;padding:0px; white-space: nowrap;">
-                            <li><i class="bi bi-github"></i></li>
-                            <li><i class="bi bi-github"></i></li>
-                            <li><i class="bi bi-github"></i></li>
-                            <li><i class="bi bi-github"></i></li>
-                        </ul>
-
-                    </div>
-                    <div class="col mt-3" style="margin-left:0px;">
-                        <ul style="list-style-type:None;padding:0px; white-space: nowrap;">
-                            <li><i class="bi bi-linkedin"></i></li>
-                            <li><i class="bi bi-linkedin"></i></li>
-                            <li><i class="bi bi-linkedin"></i></li>
-                            <li><i class="bi bi-linkedin"></i></li>
-                        </ul>
+                    <div class="col mt-2" style="margin-left:0px;text-align:center;">
+                        <table>
+                            <tr>
+                                <td><a href="https://github.com/gargibisht"><i class="bi bi-github"></i></a></td>
+                                <td><a href="https://www.linkedin.com/in/gargi-bisht2908/"><i class="bi bi-linkedin"></i></a></td>
+                                <td><a href="https://twitter.com/gigibisht"><i class="bi bi-twitter"></i></a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/khushi145"><i class="bi bi-github"></i></a></td>
+                                <td><a href="https://www.linkedin.com/in/khushi-srivastava-159720218/"><i class="bi bi-linkedin"></i></a></td>
+                                <td><a href="https://twitter.com/_khushi2001_"><i class="bi bi-twitter"></i></a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/vanithaak"><i class="bi bi-github"></i></a></td>
+                                <td><a href="https://www.linkedin.com/in/vanitha-k-aa1bb2190"><i class="bi bi-linkedin"></i></a></td>
+                                <td><a href="https://twitter.com/vkrishnannn"><i class="bi bi-twitter"></i></a></td>
+                                <td><a href="https://www.instagram.com/vanithaaak/"><i class="bi bi-instagram"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/Vaishnavi-mall"><i class="bi bi-github"></i></a></td>
+                                <td><a href="https://www.linkedin.com/in/vaishnavimall2001"><i class="bi bi-linkedin"></i></a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
