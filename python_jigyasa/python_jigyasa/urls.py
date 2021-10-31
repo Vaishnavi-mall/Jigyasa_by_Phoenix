@@ -19,9 +19,10 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from app.views import LandingPageView
+from app.views import LandingPageView, MicView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', LandingPageView.as_view(), name='landing-page'),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+                  path('admin/', admin.site.urls),
+                  path('', LandingPageView.as_view(), name='landing-page'),
+                  path('mic/', MicView.as_view(), name='mic')
+              ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
